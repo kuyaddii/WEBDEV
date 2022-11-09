@@ -1,140 +1,165 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-body{   
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
-.background{
+.header{
+    min-height: 100vh;
     width: 100%;
-	background: linear-gradient(to top,rgb(0,0,0,0.5)50%,rgb(0,0,0,0.5)50%),url(background.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 109vh; 
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 nav{
-    height: 100px;
-    width: 100%;
-    background-color: darkgreen;
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-label.classlogo{
-    font-size: 45px;
-    font-weight: bold;
-    -webkit-text-stroke: 1px white;
-    color: red;
-    padding: 45px;
-    line-height: 95px;
-    margin-left: -10px;
+nav img{
+    width: 150px;
 }
 
-label.logo2{
-    margin-left: 40px;
+.nav-link{
+    flex: 1;
+    text-align: right;
 }
 
-nav ul{
-    float: right;
-    margin: 1px;
-    font-size: 60px;
-}
-
-nav li{
-    display: inline-block;
-    margin: 15px;
-    line-height: 55px;
-}
-
-nav a{
-    color: red;
-    -webkit-text-stroke:0.3px white;
-    text-transform: uppercase;
-    border: 2px solid transparent;
+.nav-link ul li{
+    list-style: none;
     padding: 8px 12px;
-    border-radius: 4px;
+    position: relative;
+    display: inline-block;
 }
 
-
-a.active, a:hover{
-    border: 1.5px solid white;
-    transition: .5s;
+.nav-link ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-nav #icon{
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-
+.nav-link ul li::after{
+    width: 0%;
+    content: '';
+    background: #f44336;
+    display: block;
+    height: 2px;
+    margin: auto;
+    transition: 0.5s;
 }
 
-nav h2{
-    text-align:center;
-    margin-left: 40px;
-    margin-top: 150px;
-    font-size: 70px;
-    font-weight: bold;
-    color: white;
-    -webkit-text-stroke: 2px  red;
+.nav-link ul li:hover::after{
+    width: 100%;
 }
 
-nav p{
-    text-transform: uppercase;
+.text{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    font-size: 50px;
-    color: white;
-    -webkit-text-stroke: 1px red;
+    transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1048px){
-    label:logo{
-        font-size: 30px;
-        padding-left: 60px;
+.text h1{
+    font-size: 62px;
+}
+
+.text p{
+    margin: 10px 0 40px;
+    font-size:14px;
+    color: White;
+}
+
+.hero-btn{
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    background: transparent;
+    padding: 12px 34px;
+    border: 1px solid grey;
+    color:White;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+
+    .text h1{
+        font-size: 20px;
     }
-}
 
-nav ul{
-    margin-right: 20px;
-}
-
-nav a{
-    font-size: 25px;
-}
-
-@media (max-width: 910px){
-    nav #icon{
+    .nav-link ul li{
         display: block;
-       }
-    nav ul{
-        position: fixed;
-        width: 100%;
+    }
+
+    .nav-link{
+        position: absolute;
+        background: #f44336;
         height: 100vh;
-        top: 80px;
-        left: -100%;
-        background: #CE2713;
-        transition: all .6s;
-        text-align: center;
+        width: 200px;
+        top: 0;
+        right: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
     }
 
-    nav li{
+    nav .fa{
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
+    .nav-link ul{
+        padding: 30px;
+    }
+}
 
-    a.active, a:hover{
-        border: none;
-        color: aqua;
-    }
+.home{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
-    nav ul.show{
-        left: 0px;
-    }
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h2{
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.icons .fab{
+    color: #f44336;
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 18px 0;;
+}
+
+.fa-heart{
+    color: #f44336;
 }
