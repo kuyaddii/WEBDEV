@@ -91,7 +91,7 @@ a {
 {
 	position: relative;
 	width: 300px;
-	margin-top: 35px;
+	margin-top: 20px;
 }
 .inputBox input 
 {
@@ -152,7 +152,7 @@ a {
 }
 .links a 
 {
-	margin: 20px 5px;
+	margin: 6px;
 	font-size: .90em;
 	color: #8f8f8f;
 	text-decoration: beige;
@@ -172,7 +172,7 @@ input[type="submit"]
 	border-radius: 4px;
 	font-weight: 600;
 	width: 100px;
-	margin-top: 25px;
+	margin-top: 20px;
 	margin-left: 100px;
 }
 input[type="submit"]:active 
