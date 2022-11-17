@@ -21,7 +21,7 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 80px;
 }
 
 .nav-link{
@@ -119,242 +119,36 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-link ul{
-        padding: 30px;
-    }
 }
 
-.home{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.row1{
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.box{
+.searchbar{
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    gap: 60px;
+    margin-left: 5px;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: transparent;
+}
+
+.bikes{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
     flex-wrap: wrap;
 }
 
-.box .style{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    background: #2e2e2e;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.box .style::before{
-    content:'';
-    inset: -10px 50px;
-    position: absolute;
-    border-top: 4px solid var(--clr);
-    border-bottom: 4px solid var(--clr);
-    z-index: -1;
-    transform: skewY(15deg);
-    transition: 0.5s ease-in-out;
-}
-
-.box .style:hover::before{
-    transform: skewY(0deg);
-    inset: -10px 40px;
-}
-
-.box .style::after{
-    content:'';
-    inset: 60px -10px;
-    position: absolute;
-    border-left: 4px solid var(--clr);
-    border-right: 4px solid var(--clr);
-    z-index: -1;
-    transform: skew(15deg);
-    transition: 0.5s ease-in-out;
-}
-
-.box .style:hover::after{
-    transform: skew(0deg);
-    inset: 40px -10px;
-}
-
-.box .style .content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    gap: 20px;
-    overflow: hidden;
-}
-
-.box .style .content .icon{
-    color: var(--clr);
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    background: #2e2e2e;
-    transition: 0.5s ease-in-out;
-}
-.box .style:hover .content .icon{
-    background:var(--clr);
-    color: #2e2e2e;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
-}
-
-.box .style .content .cat h3 { 
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.5 ease-in-out;
-}
-
-.box .style:hover .content .cat h3{
-    color: #2e2e2e;
-}
-
-.box .style .content .cat p{
-    color: #999;
-    transition: 0.5s ease-in-out;
-}
-.box .style:hover .content .cat p{
-    color: #2e2e2e;
-}
-
-.box .style .content .cat a{
-    position: relative;
-    background: var(--clr);
-    color: #2e2e2e;
-    padding: 8px 15px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: 0.5s ease-in-out;
-}
-.box .style:hover .content .cat a{
-    background: #2e2e2e;
-    color: var(--clr);
-}
-
-
-
-/* brandnames */
-
-.brand{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.brandname{
-    flex-basis: 42%;
+.bike{
+    flex-basis: 30%;
     border-radius: 10px;
-    margin: 50px;
+    margin: 30px;
     position: relative;
-    overflow: hidden;
 }
 
-.brandname img{
+.bike img{
     width: 100%;
-    display: block;
-}
-
-.layer{
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    transition: 0.5s;
-}
-
-.layer:hover{
-    background: rgba(226,0,0,0.7);
-}
-
-.layer h3{
-    width: 80%;
-    font-weight: 500;
-    color: black;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s; 
-}
-
-.layer:hover h3{
-    bottom: 40%;
-    opacity: 1;
-}
-
-
-
-/* footer*/
-
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.footer h1{
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-.icons .fab{
-    color: #f44336;
-    cursor: pointer;
-    margin: 0 13px;
-    padding: 18px 0;;
-}
-
-.fa-heart{
-    color: #f44336;
+    
+    justify-content: space-between;
+    align-content: space-between;
 }
