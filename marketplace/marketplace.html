@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IEa=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="marketstyle.css">
+    <title> Official Taurus Store </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+</head>
+    
+
+<body>
+ <div class="nav">
+    <ul>
+        <li>
+            <a href="#">
+                <span class="icon"> <img src="Logo2.png" height="30px" width="30px"></span>
+                <span class="title"> Taurus Bike</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title"> Dash Board </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <span class="title"> Customer </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <span class="title"> Messages </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                <span class="title"> Help </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                <span class="title"> Settings </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <span class="title"> Password </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="title"> Sign Out</span>
+            </a>
+        </li>
+
+    </ul>
+    <div class="toggle"> </div>
+ </div>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+<script>
+    let nav = document.querySelector('.nav');
+    let toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+        nav.classList.toggle('active')
+    }
+</script>
+
+</body>
+</html>
