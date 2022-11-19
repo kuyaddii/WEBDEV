@@ -157,3 +157,7 @@ body{
     text-align: start;
     white-space: nowrap;
 }
+
+.main-content{
+    margin-left: 345px;
+}
