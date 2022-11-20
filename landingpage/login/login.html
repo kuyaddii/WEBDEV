@@ -12,13 +12,13 @@
 </head>
 <body>
 	<div class="box">
-		<form autocomplete="off">
+		<form action="../phpfiles/login.php" method="POST">
 			<a href="/landingpage/index.html"><img src="Logo2.png" width="40px", height="40px"></a>
+			
 			<h2>S I G N - I N</h2>
 			
-
 			<div class="inputBox">
-				<input type="text" required="required">
+				<input type="username" required="required">
 				<span>Userame</span>
 				<i></i>
 			</div>
@@ -29,15 +29,15 @@
 				<i></i>
 			</div>
 
-			<input type="submit" value="Login">
+			<input type="submit" class="btn btn-primary w-100" value="Login" name="">
 
 			<div class="links">
 				<a href="#">Forgot Password? </a>
 				<a href="register.html"> Signup </a>
 			</div>
-
-			
 		</form>
+			
+	</form>
 	</div>
 </body>
 </html>
