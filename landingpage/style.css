@@ -13,7 +13,29 @@
     position: relative;
 }
 
-nav{
+.header .label a{
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.header .label a::after{
+    width: 0%;
+    content: '';
+    background: #ff0000;
+    display: block;
+    height: 2px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header .label a:hover::after{
+    width: 100%;
+}
+
+nav {
     display: flex;
     padding: 2% 6%;
     align-items: center;
@@ -21,7 +43,7 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 90px;
 }
 
 .nav-link{
@@ -45,7 +67,7 @@ nav img{
 .nav-link ul li::after{
     width: 0%;
     content: '';
-    background: #f44336;
+    background: #ff0000;
     display: block;
     height: 2px;
     margin: auto;
@@ -64,28 +86,43 @@ nav img{
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    margin-top: 20px;
 }
 
 .text h1{
-    font-size: 62px;
+    margin-top: 40px;
+    font-size: 60px;
+    color: #ff1a1a;
+    text-shadow: 0 0 3px #fff 0 0 5px #FFF;
 }
 
 .text p{
-    margin: 10px 0 40px;
-    font-size:14px;
-    color: White;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px;
+    text-align: justify;
+}
+
+.text img{
+    margin-left: 700px;
+    margin-top: -500px;
+    border-radius: 5px;
+    box-shadow: 2px#f44336;
 }
 
 .hero-btn{
+    margin-top: 5px;
     cursor: pointer;
     position: relative;
     font-size: 13px;
     background: transparent;
-    padding: 12px 34px;
+    padding: 13px 34px;
     border: 1px solid grey;
     color:White;
     text-decoration: none;
     display: inline-block;
+
 }
 
 .hero-btn:hover{
@@ -304,10 +341,20 @@ nav .fa{
 /* brandnames */
 
 .brand{
-    width: 80%;
+    width: 99%;
+    font-size: 20px;
+    font-style: bold;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding: 5rem 1rem;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+
+.brand p{
+    color: #777;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px;
 }
 
 .brandname{
@@ -340,6 +387,9 @@ nav .fa{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: center;
 }
 
 .footer h1{
