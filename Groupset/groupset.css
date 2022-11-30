@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.con{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.wheel{
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    position: relative;
+}
+.bike{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+h1{
+    font-size: 70px;
+    position: relative;
+    margin-bottom: 30px;
+}
+h1::after{
+    content: '';
+    width: 450px;
+    height: 3px;
+    background: linear-gradient(to right, #f44336, #9f4db5);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review{
+    width: 90%;
+    max-width: 90%;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+.part{
+    height: 80vh;
+    padding: 40px;
+    color: #fff;
+    line-height: 22px;
+    box-sizing: border-box;
+    position: relative;
+    right: 50px;
+    left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to left, white, lightgray, gray);
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    color: black;
+}
+.pics{
+    width: 700px;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.pics img{
+    width:100%;
+    height: fit-content;
+    border-radius: 10px;
+}
+#slide{
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.sidebar{
+    width: 90px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background: #f44336;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar img{
+    width: 55px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+}
+.swiper-slide .fork{
+    height: 400px;
+}
