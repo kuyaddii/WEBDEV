@@ -4,10 +4,10 @@
  
  try {
 
-  $username = "juan";
-  $password = "juan2";
+  $username = 'username';
+  $password = 'password';
 
-  $stmt = $conn->prepare("SELECT * FROM users WHERE username=:username and password=:password");
+  $stmt = $conn->prepare("SELECT * FROM users WHERE username=:username and userpass=:password");
   $stmt->execute(['username' => $username, 'password' => $password]); 
   $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=taurusbike;port=3307", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=taurusstore;port=3306", $username, $password);
 
   // set the PDO error mode to exception
 
