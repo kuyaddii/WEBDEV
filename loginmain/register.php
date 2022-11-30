@@ -45,7 +45,7 @@ require_once ('config.php');
 	<div class="box">
 		<form action="register.php" method="POST">
 			
-			<a href="/landingpage/index.html"><img src="Logo2.png" width="40px", height="40px"></a>
+			<a href="index.html"><img src="Logo2.png" width="40px", height="40px"></a>
 			<h2>REGISTRATION</h2>
 			
 			<div class="inputBox">
@@ -69,7 +69,7 @@ require_once ('config.php');
 			<input class="btn btn-primary" type="submit"  value="Register" name="create">
 
 			<div class="links">
-				<a href="#"> Already have an account? Sign-in </a>
+				<a href="./login.php"> Already have an account? Sign-in </a>
 			</div>
 			
 		</form>
