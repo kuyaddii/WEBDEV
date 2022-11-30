@@ -1,9 +1,16 @@
+<?php
+
+require_once ('config.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Animated Login Form</title>
-	<link rel="stylesheet" href="styleReg.css">
+
+	<link rel="stylesheet" type="text/css" href="styleReg.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"rel="stylesheet">
@@ -12,34 +19,57 @@
 
 </head>
 <body>
+
+<?php
+	if(isset($_POST['create'])){
+
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$email    = $_POST['email'];
+		
+		$sql = "INSERT INTO users (username, userpass, email) VALUES (?,?,?)";
+		$stmtinsert = $db->prepare($sql);
+		$result = $stmtinsert->execute([$username, $password, $email]); 
+		
+		if($result){
+			echo 'Success!';
+		}
+		
+		else {
+			echo 'Error!';
+		}
+		
+		}
+		?>
+	
 	<div class="box">
-		<form action="../phpfiles/register.php" method="POST">
+		<form action="register.php" method="POST">
 			
 			<a href="/landingpage/index.html"><img src="Logo2.png" width="40px", height="40px"></a>
 			<h2>REGISTRATION</h2>
 			
 			<div class="inputBox">
-				<input type="username" required="required">
+			<input class="form-control" type="text" name="username" required>
 				<span>Userame</span>
 				<i></i>
 			</div>
 
 			<div class="inputBox">
-				<input type="password" required="required">
+			<input class="form-control" type="password" name="password" required>
 				<span>Password</span>
 				<i></i>
 			</div>
 
 			<div class="inputBox">
-				<input type="email" required="required">
+			<input class="form-control" type="email" name="email" required>
 				<span>Email</span>
 				<i></i>
 			</div>
 
-			<input type="submit" class="btn btn-primary w-100" value="Register" name="">
+			<input class="btn btn-primary" type="submit"  value="Register" name="create">
 
 			<div class="links">
-				<a href="login.html">Already have an account? Sign-in </a>
+				<a href="#"> Already have an account? Sign-in </a>
 			</div>
 			
 		</form>
