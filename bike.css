@@ -37,7 +37,7 @@ section{
 }
 
 .heading span{
-    color:var(--pink);
+    color:red;
 }
 
 .btn{
@@ -74,7 +74,7 @@ header .logo{
 }
 
 header .logo span{
-    color:var(--pink);
+    color: red;
 }
 
 header .navbar a{
