@@ -43,6 +43,7 @@ require_once ('config.php');
 		?>
 	
 	<div class="box">
+		
 		<form action="register.php" method="POST">
 			
 			<a href="index.html"><img src="Logo2.png" width="40px", height="40px"></a>
