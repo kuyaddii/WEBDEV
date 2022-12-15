@@ -1,0 +1,164 @@
+@import url('https://fonts.google.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+     margin:0;
+     padding:0;
+     font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("background.jpg");
+}
+.container
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.container .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 420px;
+}
+.container .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.container .card .imgBx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -430px;
+    padding: 10px 15px;
+    text-align: justify;
+    color: rgb(2, 2, 2);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3px;
+}
+.imgBx
+{
+    transform: translate();
+    overflow: hidden;
+    width: 85vmin;
+    position: absolute;
+
+}
+.slide-images
+{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    padding: 5px
+}
+@keyframes slide
+{
+    0% {transform: translateX(0);}
+    25%{transform: translateX(0);}
+    30% {transform: translateX(-100%);}
+    50% {transform: translateX(-100%);}
+    100% {transform: translateX(-0%);}
+}
+.img
+{
+    width: 100%;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    object-fit: contain;
+
+  }
+.shop{
+    display: flex;
+}
+.shop img{
+    width: 100px;
+}
+.shop h4{
+    color: red;
+    position: relative;
+    margin-top: 30px;
+    font-size: 50px;
+}
+.slide-images3
+{
+    width: 100%;
+    display: flex;
+    animation: slides 16s infinite;
+}
+@keyframes slides
+{
+    0% {transform: translateX(0);}
+    25%{transform: translateX(-50);}
+    50% {transform: translateX(-200%);}
+    65% {transform: translateX(-200%);}
+    100% {transform: translateX(-0%);}
+}
+.drop ul li a
+{
+    display: block;
+    padding: 30px 10px;
+    color: rgb(80, 22, 22);
+    text-decoration: none;
+    text-align: left;
+    font-size: 30px;
+}
+.drop ul li ul.dropdown li
+{
+    display: block;
+}
+.drop ul li ul.dropdown
+{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.drop ul li a:hover
+{
+    background: #084206;
+}
+.drop ul li:hover ul.dropdown
+{
+    display: block;
+}
