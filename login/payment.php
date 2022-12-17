@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- custom css file link  -->
+
     <link rel="stylesheet" href="payment.css">
 
 </head>
@@ -14,7 +14,7 @@
 <div class="container">
     <form action="">
         <div class="logo">
-            <a href="bike.html"><img src="Logo2.png" alt=""></a>
+            <a href="bike.php"><img src="Logo2.png" alt=""></a>
         </div>
         <div class="row">
 

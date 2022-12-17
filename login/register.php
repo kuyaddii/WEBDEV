@@ -18,9 +18,9 @@
 
 	<div class="box">
 
-		<form action="login.html" method="POST">
+		<form action="login.php" method="POST">
 			
-			<a href="landingpage.html"><img src="Logo2.png" width="40px", height="40px"></a>
+			<a href="landingpage.php"><img src="Logo2.png" width="40px", height="40px"></a>
 			<h2>REGISTRATION</h2>
 			
 			<div class="inputBox">
@@ -44,7 +44,7 @@
 			<input class="btn btn-primary" type="submit"  value="Register" name="create">
 
 			<div class="links">
-				<a href="../login/login.html"> Already have an account? Sign-in </a>
+				<a href="../login/login.php"> Already have an account? Sign-in </a>
 			</div>
 			
 		</form>

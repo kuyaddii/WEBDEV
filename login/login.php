@@ -15,9 +15,9 @@
 <body>
 	<div class="box">
 
-		<form action="bike.html" method="POST">
+		<form action="bike.php" method="POST">
 
-			<a href="landingpage.html"><img src="Logo2.png" width="40px", height="40px"></a>
+			<a href="landingpage.php"><img src="Logo2.png" width="40px", height="40px"></a>
 			
 			<h2>S I G N - I N</h2>
 			
@@ -33,11 +33,11 @@
 				<i></i>
 			</div>
 
-			<input class="btn btn-primary" type="submit"  value="Sign In" name="submit" href="/bike.html">
+			<input class="btn btn-primary" type="submit"  value="Sign In" name="submit" href="/bike.php">
 
 			<div class="links">
 				<a href="#">Forgot Password? </a>
-				<a href="./register.html"> Signup </a>
+				<a href="./register.php"> Signup </a>
 			</div>
 		</form>
 			

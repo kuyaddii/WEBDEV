@@ -20,10 +20,10 @@
 <body>
     <section class="header">
     <nav>
-        <a href="./landingpage.html"><img src="Logo2.png"></a>
+        <a href="./landingpage.php"><img src="Logo2.png"></a>
 
         <label for="store" class="label">
-        <a href="landingpage.html"> TAURUS BIKE  </a>
+        <a href="landingpage.php"> TAURUS BIKE  </a>
         </label>
         
 <div class="nav-link" id="navLink">
@@ -58,7 +58,7 @@
 
         <img src="homecredit.jpg" height="350px" width="350px">
     
-        <a href="register.html" class="hero-btn"> Register Here! </a>
+        <a href="register.php" class="hero-btn"> Register Here! </a>
 
 </div>
 </section>
@@ -84,7 +84,7 @@ In our store, we give the best quality service and product in affordable and che
     <div class="cat">
         <h3> Products </h3>
         <p> All kinds of brands you can see here at buy at a very cheapest price!</p>
-            <a href="../Checkitout/product.html">Check it out!</a>
+            <a href="../Checkitout/product.php">Check it out!</a>
         </div>
     </div>
 </div>
@@ -96,7 +96,7 @@ In our store, we give the best quality service and product in affordable and che
     <div class="cat">
         <h3> Services </h3>
         <p>Best and Quality Service that you can experience here!</p>
-           <a href="../Checkitout/services.html">Check it out!</a>
+           <a href="../Checkitout/services.php">Check it out!</a>
     </div>
 </div>
 </section>
