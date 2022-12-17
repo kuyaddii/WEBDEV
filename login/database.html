@@ -16,39 +16,41 @@
     
     <div class="container mt-5">
         <div class="text-center">
-            <h1 class="display-5 mb-5"><strong> Taurus Bike List</strong></h1>
+            <h1 class="display-5 mb-5"><strong> Taurus Bike List</strong> 
+                <button class="btn btn-primary" type="submit" value="Logout" href="landingpage.html" hr> </h1>
+                
         </div>
 
         <div class="main row justify-content-center">
             <form action="" id="bike-form" class="row justify-content-center mb-4" autocomplete="off">
 
-                <div class="col-8 mb-3">
+                <div class="col-8  col-md-8 mb-3">
                     <label for="bikenumber"> Bike Number </label>
                     <input class="form-control" id="bikenumber" type="text" placeholder="Enter Bike Number">
                 </div>
 
-                <div class="col-8 mb-3">
+                <div class="col-8 col-md-8 mb-3">
                     <label for="bikename"> Bike Name </label>
                     <input class="form-control" id="bikename" type="text" placeholder="Enter Bike Name">
                 </div>
 
-                <div class="col-8 mb-3">
-                    <label for="bikename"> Bike Price </label>
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="bikeprice"> Bike Price </label>
                     <input class="form-control" id="bikeprice" type="text" placeholder="Enter Bike Price">
                 </div>
 
-                <div class="col-8 mb-3">
-                    <label for="bikename"> Quantity </label>
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="quantity"> Quantity </label>
                     <input class="form-control" id="quantity" type="text" placeholder="Enter Quantity">
                 </div>
 
-                <div class="col-8">
+                <div class="col-8 mt-3">
                     <input class="btn btn-success add-btn" type="submit" value="Submit">
                 </div>                
 
             </form>
 
-            <div class="col-8 mt-5">
+            <div class="col-8  col-md-8 mt-5">
                 <table class="table table-striped table-dark">
                     <thead>
                         <tr>
@@ -56,23 +58,27 @@
                             <th>Bike Name</th>
                             <th>Bike Price</th>
                             <th>Bike Quantity</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody class="bike-list">
+                    <tbody id="bike-list">
                         <tr>
-                            <td>ADS</td>
-                            <td>List</td>
-                            <td>26</td>
+                            <td>1</td>
+                            <td>Toseek</td>
+                            <td>10500</td>
+                            <td>10</td>
                             <td>
-                                <a href="" class="btn btn-warning btn-sm edit"> Edit </a>
-                                <a href="" class="btn btn-danger btn-sm delete"> Delete </a>
+                                <a href="#" class="btn btn-warning btn-sm edit"> Edit </a>
+                                <a href="#" class="btn btn-danger btn-sm delete"> Delete </a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
