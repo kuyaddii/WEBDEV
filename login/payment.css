@@ -20,8 +20,8 @@
 .container form .logo img{
   width: 100px;
   display: block;
-  margin-left: 250px;
-  background-color: lightblue;
+  margin-left: 550px;
+  margin-top: 10px;
   border-radius: 10px;
 }
 
